@@ -106,6 +106,9 @@ Exit criteria:
 ## Acceptance Criteria
 
 - Portfolio displays only curated repos with valid live URLs.
+- Resume/CV is reachable in one click from global navigation.
+- Homepage includes a secondary CTA to view/download resume.
+- Resume asset is available at `/cv/resume.pdf` and opens without auth.
 - Admin curation is private and auth-gated.
 - Screenshot refresh runs only for relevant changes.
 - Previous screenshot is preserved when refresh fails.
@@ -116,6 +119,7 @@ Exit criteria:
 ## Planned Code Areas
 
 - Existing:
+  - `app/page.tsx`
   - `app/projects/page.tsx`
   - `app/api/refresh-screenshots/route.ts`
   - `components/site-nav.tsx`
@@ -125,6 +129,7 @@ Exit criteria:
   - `lib/screenshotone.ts`
   - `lib/screenshot-store.ts`
 - New:
+  - `public/cv/resume.pdf`
   - `convex/**`
   - `app/admin/**`
   - `app/contact/**`

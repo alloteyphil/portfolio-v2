@@ -9,6 +9,8 @@ This file is the source of truth for product and technical decisions agreed so f
 - Portfolio shows only live/deployed projects.
 - `/blog` is not shipped in this phase.
 - Contact form is included in this phase.
+- Resume/CV is accessible from primary navigation and homepage hero CTA.
+- Resume file is served as a static public asset (`/cv/resume.pdf`) for direct open/download.
 - Design direction is minimal and purple-forward.
 - Light animations are included.
 
