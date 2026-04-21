@@ -16,6 +16,9 @@ Use this checklist for every merge into `main`.
 - [ ] `/projects` shows only curated featured repos.
 - [ ] Repos without valid live URLs are excluded.
 - [ ] Each card shows description, stack tags, and live link.
+- [ ] Projects list supports stack/category filtering without empty-state regressions.
+- [ ] Search input (if enabled) returns expected projects by title/description/tag.
+- [ ] Case-study route (`/projects/[slug]`) loads for eligible projects and has no broken links.
 
 ## Admin
 
@@ -54,6 +57,8 @@ Use this checklist for every merge into `main`.
 - [ ] Animation behavior is subtle and non-blocking.
 - [ ] `prefers-reduced-motion` behavior is respected.
 - [ ] No broken images or dead links in primary navigation.
+- [ ] Skills section is readable and each skill links to at least one concrete project/example.
+- [ ] Resume links from nav and homepage CTA open `/cv/resume.pdf` successfully.
 
 ## Deployment Readiness
 

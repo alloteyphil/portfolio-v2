@@ -103,12 +103,34 @@ Exit criteria:
 - Required tests pass.
 - Release checklist is complete.
 
+## Phase 7: Portfolio Growth Features
+
+- Add project detail route (`/projects/[slug]`) for case studies:
+  - problem statement
+  - implementation approach
+  - stack and tradeoffs
+  - outcomes and links
+- Add skills proof section to homepage and/or projects surface:
+  - list core skills with short proficiency framing
+  - attach evidence links to specific shipped features or repos
+- Add project filters and text search on `/projects`:
+  - filter by stack/category
+  - optional quick search by title/description/tag
+
+Exit criteria:
+
+- At least one shipped project has a complete case-study detail page.
+- Skills section is visible and each skill maps to at least one evidence link.
+- Projects list can be narrowed by filters without broken routing or missing cards.
+
 ## Acceptance Criteria
 
 - Portfolio displays only curated repos with valid live URLs.
 - Resume/CV is reachable in one click from global navigation.
 - Homepage includes a secondary CTA to view/download resume.
 - Resume asset is available at `/cv/resume.pdf` and opens without auth.
+- Skills section is present and includes evidence links to shipped portfolio work.
+- Projects page supports filtering by stack/category.
 - Admin curation is private and auth-gated.
 - Screenshot refresh runs only for relevant changes.
 - Previous screenshot is preserved when refresh fails.
@@ -121,15 +143,17 @@ Exit criteria:
 - Existing:
   - `app/page.tsx`
   - `app/projects/page.tsx`
+  - `lib/projects.ts`
+  - `components/**` (homepage and project UI composition)
   - `app/api/refresh-screenshots/route.ts`
   - `components/site-nav.tsx`
   - `lib/github.ts`
-  - `lib/projects.ts`
   - `lib/cloudinary.ts`
   - `lib/screenshotone.ts`
   - `lib/screenshot-store.ts`
 - New:
   - `public/cv/resume.pdf`
+  - `app/projects/[slug]/page.tsx`
   - `convex/**`
   - `app/admin/**`
   - `app/contact/**`

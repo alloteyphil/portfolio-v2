@@ -11,6 +11,11 @@ This file is the source of truth for product and technical decisions agreed so f
 - Contact form is included in this phase.
 - Resume/CV is accessible from primary navigation and homepage hero CTA.
 - Resume file is served as a static public asset (`/cv/resume.pdf`) for direct open/download.
+- Near-term portfolio enhancements are prioritized as:
+  - project case-study pages
+  - skills proof matrix tied to shipped work
+  - project filtering and search on `/projects`
+- A dedicated skills section is part of portfolio scope and must link each listed skill to concrete project evidence.
 - Design direction is minimal and purple-forward.
 - Light animations are included.
 
